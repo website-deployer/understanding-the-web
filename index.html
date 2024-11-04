@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how the web works - from client-side to server-side architecture">
+    <meta name="keywords" content="web development, HTML, CSS, JavaScript, client-side, server-side">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Understanding the Web | Interactive Guide</title>
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">WebDev</div>
+            <div class="nav-links">
+                <a href="#basics">Basics</a>
+                <a href="#components">Components</a>
+                <a href="#technologies">Technologies</a>
+                <a href="#demo">Live Demo</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle"></button>
+        </div>
+    </nav>
+
+    <div class="container loading">
+        <section id="basics" class="hero">
+            <h1>Understanding the Web</h1>
+            <p>Discover how the internet works and connects millions of users worldwide</p>
+            <div class="hero-actions">
+                <button class="cta-button">Get Started</button>
+                <button class="secondary-button">View Examples</button>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <section id="components" class="web-components">
+            <!-- Client Side Component -->
+            <div class="component feature-card">
+                <div class="card-header">
+                    <img src="images/client.png" alt="Client Device">
+                    <h2>Client Side</h2>
+                </div>
+                <div class="card-content">
+                    <p class="main-description">Your devices and browsers that request and display web content</p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-icon">🌐</span>
+                            <h4>Web Browsers</h4>
+                            <p>Chrome, Firefox, Safari</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📱</span>
+                            <h4>Devices</h4>
+                            <p>Mobile, Desktop, Tablet</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔍</span>
+                            <h4>Rendering</h4>
+                            <p>DOM & CSSOM Processing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="component feature-card">
+                <div class="card-header">
+                    <img src="images/server.png" alt="Web Server">
+                    <h2>Server Side</h2>
+                </div>
+                <div class="card-content">
+                    <p class="main-description">Powerful computers that store and serve web content</p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-icon">⚡</span>
+                            <h4>Processing</h4>
+                            <p>Request Handling</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔒</span>
+                            <h4>Security</h4>
+                            <p>Authentication & Authorization</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📡</span>
+                            <h4>API</h4>
+                            <p>Data Exchange</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component feature-card">
+                <div class="card-header">
+                    <img src="images/database.png" alt="Database">
+                    <h2>Databases</h2>
+                </div>
+                <div class="card-content">
+                    <p class="main-description">Storage systems that keep all the web data organized</p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-icon">💾</span>
+                            <h4>Storage</h4>
+                            <p>Data Persistence</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔄</span>
+                            <h4>Queries</h4>
+                            <p>Data Retrieval</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📊</span>
+                            <h4>Scaling</h4>
+                            <p>Load Distribution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flow-diagram">
+            <h2>How Data Flows Through the Web</h2>
+        </section>
+
+        <section id="technologies" class="web-components">
+            <!-- HTML Component -->
+            <div class="component feature-card">
+                <div class="card-header">
+                    <img src="images/html.png" alt="HTML Icon">
+                    <h2>HTML</h2>
+                </div>
+                <div class="card-content">
+                    <p class="main-description">The foundation and structure of web pages</p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-icon">📝</span>
+                            <h4>Elements</h4>
+                            <p>Building blocks of content</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🏗️</span>
+                            <h4>Semantics</h4>
+                            <p>Meaningful structure</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔗</span>
+                            <h4>Links</h4>
+                            <p>Content connections</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- CSS Component -->
+            <div class="component feature-card">
+                <div class="card-header">
+                    <img src="images/css.png" alt="CSS Icon">
+                    <h2>CSS</h2>
+                </div>
+                <div class="card-content">
+                    <p class="main-description">Styles and designs that bring websites to life</p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-icon">🎨</span>
+                            <h4>Styling</h4>
+                            <p>Colors and Typography</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📱</span>
+                            <h4>Responsive</h4>
+                            <p>Adaptive layouts</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✨</span>
+                            <h4>Animations</h4>
+                            <p>Dynamic effects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- JavaScript Component -->
+            <div class="component feature-card">
+                <div class="card-header">
+                    <img src="images/javascript.png" alt="JavaScript Icon">
+                    <h2>JavaScript</h2>
+                </div>
+                <div class="card-content">
+                    <p class="main-description">Programming that creates interactive experiences</p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-icon">🔄</span>
+                            <h4>Dynamic</h4>
+                            <p>Real-time updates</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🎮</span>
+                            <h4>Interactive</h4>
+                            <p>User engagement</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📡</span>
+                            <h4>APIs</h4>
+                            <p>Data integration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="demo" class="tech-demo">
+        <h2>Web Technologies in Action</h2>
+        <div class="demo-container">
+            <div class="demo-box html-demo">
+                <h3>HTML: Structure</h3>
+                <div class="code-window">
+                    &lt;div class="user-card"&gt;
+                        &lt;div class="avatar"&gt;JD&lt;/div&gt;
+                        &lt;h2&gt;John Doe&lt;/h2&gt;
+                        &lt;div class="badge"&gt;Web Developer&lt;/div&gt;
+                        &lt;div class="stats"&gt;
+                            &lt;span&gt;Projects: 15&lt;/span&gt;
+                            &lt;span&gt;Rating: 4.8&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </div>
+                <div class="preview-window">
+                    <div class="user-card">
+                        <div class="avatar">JD</div>
+                        <h2>John Doe</h2>
+                        <div class="badge">Web Developer</div>
+                        <div class="stats">
+                            <span>Projects: 15</span>
+                            <span>Rating: 4.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-box css-demo">
+                <h3>CSS: Style</h3>
+                <div class="code-window">
+                    .animated-box {
+                        background: #4a90e2;
+                        transform: rotate(0deg);
+                        transition: all 0.5s;
+                    }
+                </div>
+                <div class="preview-window">
+                    <div class="animation-container">
+                        <div class="preview-box" id="animatedBox"></div>
+                    </div>
+                    <div class="control-section">
+                        <button class="demo-btn" onclick="toggleAnimation()">Animate Box</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-box js-demo">
+                <h3>JavaScript: Interactivity</h3>
+                <div class="code-window">
+                    function updateCounter() {
+                        count++;
+                        display.textContent = count;
+                    }
+                </div>
+                <div class="preview-window">
+                    <div class="counter-box" id="counterDisplay">0</div>
+                    <button class="demo-btn" onclick="updateCounter()">Count Up</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Learning Resources</h3>
+                <ul>
+                    <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                    <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+                    <li><a href="https://css-tricks.com" target="_blank">CSS-Tricks</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Development Tools</h3>
+                <ul>
+                    <li><a href="https://code.visualstudio.com" target="_blank">VS Code</a></li>
+                    <li><a href="https://codepen.io" target="_blank">CodePen</a></li>
+                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="https://figma.com" target="_blank">Figma</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                    <li><a href="https://dev.to" target="_blank">Dev.to</a></li>
+                    <li><a href="https://reddit.com/r/webdev" target="_blank">Reddit /r/webdev</a></li>
+                    <li><a href="https://discord.com" target="_blank">Discord Communities</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom" style="justify-content: center;">
+            <p>Created by a student at Abington Middle School</p>
+        </div>
+    </footer>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add loaded class for fade-in effect
+            document.querySelector('.container').classList.add('loaded');
+            
+            // Add intersection observer for lazy loading
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            });
+            
+            document.querySelectorAll('.component').forEach(component => {
+                observer.observe(component);
+            });
+        });
+
+        let count = 0;
+        function incrementCounter() {
+            count++;
+            document.getElementById('counter').textContent = count;
+        }
+
+        function changeColor() {
+            const colors = ['#4a90e2', '#e24a4a', '#4ae24a', '#e24a90'];
+            const btn = document.getElementById('styleButton');
+            btn.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        function changeSize() {
+            const btn = document.getElementById('styleButton');
+            const currentSize = parseInt(window.getComputedStyle(btn).fontSize);
+            btn.style.fontSize = (currentSize + 2) + 'px';
+        }
+
+        let count_ = 0;
+        let isAnimating = false;
+
+        function updateCounter() {
+            count_++;
+            document.getElementById('counterDisplay').textContent = count_;
+        }
+
+        function toggleAnimation() {
+            const box = document.getElementById('animatedBox');
+            isAnimating = !isAnimating;
+            box.style.transform = isAnimating ? 'rotate(180deg)' : 'rotate(0deg)';
+            box.style.background = isAnimating ? '#e24a4a' : '#4a90e2';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const progressBar = document.querySelector('.progress-bar');
+            
+            window.addEventListener('scroll', () => {
+                const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+                progressBar.style.width = `${scrollPercent}%`;
+            });
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
